@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.btn-wrapper button{
+  background-color: darkred;
+  border-radius: 50px;
+  color: white;
+}
+
+.text-wrapper span{
+  font-weight: bold;
+}
+
+.cart-wrapper img{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
