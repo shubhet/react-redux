@@ -2,6 +2,7 @@ import React from 'react';
 
 export default function Home(props){
     console.warn("Home",props.cardData);
+    console.warn("Home",props);
     return(
         <>
         <h1>My Cart</h1>
@@ -14,7 +15,8 @@ export default function Home(props){
                <span>Price : 80,000</span>
             </div>
             <div className='btn-wrapper'>
-                <button onClick={()=>props.addToCartHandler({price:10000,name:'I-phone'})}>Add to cart</button>
+                <button onClick={()=>props.addToCartHandler()}>Add to cart</button>
+                <button style={{margin:'3px'}} onClick={()=>props.removeToCartHandler()}>Remove to cart</button>
             </div>
         </div>
         </>
