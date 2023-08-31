@@ -1,6 +1,7 @@
 import { ADD_TO_CART } from "../constants"
 
 export const addToCart=(data)=>{
+   // console.warn("action data",data);
     return {
         type:ADD_TO_CART ,  //related to which addtocart or removetocart
         data:data

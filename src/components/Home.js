@@ -1,11 +1,9 @@
 import React from 'react';
 
-export default function Home(){
+export default function Home(props){
+    console.warn("Home",props.cardData);
     return(
         <>
-        <div className='cart-wrapper'>
-            <img src="https://t3.ftcdn.net/jpg/03/14/84/68/360_F_314846831_5jJsC7Us9obgwMjRDqFhs04dodzvnZvi.jpg" width="40px" height="40px"  alt="error in loading" />
-        </div>
         <h1>My Cart</h1>
         <div className='cart'>
             <div className='img-wrapper'>
@@ -16,7 +14,7 @@ export default function Home(){
                <span>Price : 80,000</span>
             </div>
             <div className='btn-wrapper'>
-                <button>Add to cart</button>
+                <button onClick={()=>props.addToCartHandler({price:10000,name:'I-phone'})}>Add to cart</button>
             </div>
         </div>
         </>
